@@ -36,8 +36,9 @@ public class RoomController {
      * 채팅방 입장
      */
     @GetMapping("/{roomId}")
-    public String joinRoom(@PathVariable(required = false) Long roomId, Model model) {
-        System.out.println("/roomId 진입");
+    public String joinRoom(@PathVariable(required = false) Long roomId, Model model, HttpSession session) {
+        String loginId = (String) session.getAttribute("user");
+        roomService.saveRoom(loginId, roomId);
         List<ChatDto> chatList = chatService.findAllChatByRoomId(roomId);
 
         model.addAttribute("roomId", roomId);
@@ -50,8 +51,9 @@ public class RoomController {
      */
     @PostMapping("/room")
     @ResponseBody
-    public ResponseEntity<?> createRoom(RoomFormDto form) {
-        roomService.createRoom(form);
+    public ResponseEntity<?> createRoom(RoomFormDto form, HttpSession session) {
+        String loginId = (String) session.getAttribute("user");
+        roomService.createRoom(loginId, form);
         return ResponseEntity.ok(null);
     }
 
@@ -69,10 +71,11 @@ public class RoomController {
      * 내가 들어간 채팅방 리스트
      */
     @GetMapping("/my-chat-list")
-    public String myChatList(HttpSession session) {
+    public String myChatList(HttpSession session, Model model) {
         String loginId = (String) session.getAttribute("user");
         List<MyRoomDto> myRoomDtoList = roomService.findMyRoom(loginId);
-        return "ok";
+        model.addAttribute("myRoomDtoList", myRoomDtoList);
+        return "chat/myRoom";
     }
 
     /**

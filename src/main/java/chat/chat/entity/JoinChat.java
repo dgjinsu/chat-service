@@ -1,6 +1,7 @@
 package chat.chat.entity;
 
 import chat.member.entity.Member;
+import chat.room.entity.Room;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,6 +24,6 @@ public class JoinChat {
     private Member member;
 
     @ManyToOne
-    @JoinColumn(name = "chat_id")
-    private Chat chat;
+    @JoinColumn(name = "room_id")
+    private Room room;
 }
