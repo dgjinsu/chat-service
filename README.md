@@ -1,5 +1,6 @@
 # chat-service
-Websocket STOMP 와 JWT를 활용한 채팅 기능 구현 저장소입니다.
+1. Websocket STOMP 와 JWT를 활용한 채팅 서비스
+2. Netty 서버와 MongoDB를 활용한 채팅 서비스 
 
 ## 방 생성
 ![방생성](https://github.com/dgjinsu/chat-service/assets/97269799/deed4e40-617b-448c-9d1c-435cfa3c0591)
