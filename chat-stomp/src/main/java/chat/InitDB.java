@@ -30,8 +30,8 @@ public class InitDB {
         private final PasswordEncoder encoder;
 
         public void initMember() {
-            Member member1 = Member.builder().loginId("a").password(encoder.encode("a")).roles(Collections.singletonList("ROLE_USER")).name("김진수").build();
-            Member member2 = Member.builder().loginId("b").password(encoder.encode("b")).roles(Collections.singletonList("ROLE_USER")).name("이유진").build();
+            Member member1 = Member.builder().loginId("a").password(encoder.encode("a")).roles(Collections.singletonList("ROLE_USER")).name("사용자A").build();
+            Member member2 = Member.builder().loginId("b").password(encoder.encode("b")).roles(Collections.singletonList("ROLE_USER")).name("사용자B").build();
 
             em.persist(member1);em.persist(member2);
 
