@@ -8,7 +8,7 @@
 <div id="1"></div>
 
 ## Websocket STOMP 와 JWT를 활용한 채팅 서비스
-> https://dgjinsu.tistory.com/6
+> [학습한 내용 정리](https://dgjinsu.tistory.com/6)
 
 <br>
 
@@ -28,12 +28,16 @@
 
 <br>
 <br>
+<br>
+<br>
 <hr>
 
 <div id="2"></div>
 
 ## 비동기 서버 Netty와 NoSQL MongoDB를 활용한 채팅 서비스
-> 나중에 주소 추가
+> [학습한 내용 정리](https://dgjinsu.tistory.com/7)
+
+<br>
 
 ## 서비스 구현
 ![Netty2](https://github.com/dgjinsu/chat-service/assets/97269799/34dfa0fb-402d-4098-b8c7-2be2f90c6781)
