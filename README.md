@@ -24,9 +24,18 @@
 ![재입장편집](https://github.com/dgjinsu/chat-service/assets/97269799/787216d3-0abd-490d-b21e-f67fa369e859)
 
 
+
+
+<br>
+<br>
+<hr>
+
 <div id="2"></div>
 
 ## 비동기 서버 Netty와 NoSQL MongoDB를 활용한 채팅 서비스
 > 나중에 주소 추가
 
-<br>
+## 서비스 구현
+![Netty2](https://github.com/dgjinsu/chat-service/assets/97269799/34dfa0fb-402d-4098-b8c7-2be2f90c6781)
+
+
