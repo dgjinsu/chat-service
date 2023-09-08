@@ -1,7 +1,7 @@
 # chat-service
 
 1. [**Websocket**](#1)
-2. [**Netty & MongoDB**](#2)
+2. [**Netty & MongoDB**](#2) 
 
 <br>
 
